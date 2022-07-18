@@ -9,11 +9,54 @@ class AbstractRepository(abc.ABC):
     and be injected in the uow"""
 
     @abc.abstractmethod
-    def get(self, params):
+    def add(self, model):
         """
-        Get domain model
+        Adds domain model
+        Args:
+        model: Domain model object
+        Returns:
+        None
+        """
+        raise NotImplementedError
 
-        :param: params: Arguments to parte on the requested endpoint.
-        :return: Response model
+    @abc.abstractmethod
+    def get(self, reference):
+        """
+        get domain model
+        Args:
+        reference: id, uuid or any unique identifier of the domain model object
+        Returns:
+        model
+        """
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def list_all(self):
+        """
+        get dictionary of domain model
+        Returns:
+        domain model
+        """
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def update(self, model):
+        """
+        update domain model
+        Args:
+        model: Domain model object
+        Returns:
+        None
+        """
+        raise NotImplementedError
+
+    @abc.abstractmethod
+    def delete(self, model):
+        """
+        delete domain model
+        Args:
+        model: Domain model object
+        Returns:
+        None
         """
         raise NotImplementedError

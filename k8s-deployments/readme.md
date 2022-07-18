@@ -5,11 +5,11 @@
 * Build
 
   ```sh
-  docker build -t ms_n-layered-ddd_template -f k8s-deployments/Dockerfile .
+  docker build -t ms-comics-store-users -f k8s-deployments/Dockerfile .
   ```
 
 * Run
 
   ```sh
-  docker run -p 9000:9000  --env-file=.env ms_n-layered-ddd_template   
+  docker run -p 9000:9000  --env-file=.env ms-comics-store-users   
   ```

@@ -12,7 +12,6 @@ class AbstractRequestHandlerMethods(abc.ABC):
     def get(self, request):
         """GET: Read"""
 
-
     @abc.abstractmethod
     def post(self, request):
         """POST: Create"""

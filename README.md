@@ -2,10 +2,10 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">Microservice N-Layered Domain Driven Design Template  </h3>
+  <h3 align="center">Microservice Comics Store User used Domain Driven Design  </h3>
 
   <p align="center">
-    Domain Driven Design Template to implement on microservice
+    Domain Driven Design Comics Store Users Implementation on microservice
   </p>
 </p>
 
@@ -39,7 +39,7 @@
 
 LONG PROJECT DESCRIPTION
 
-Template to implement Domain Driven Design using N-Layered microservice architecture
+This is a implementation of Domain Driven Design microservice architecture to use on the Users' Comics App Store
 
 
 ### Built With 🧰
@@ -85,10 +85,10 @@ This is an example of how to list things you need to use the software and how to
 
 Steps to run app
 
-1. Get a free API Key at [N-Layered DDD Microservice](https://github.com/jorgeMorfinezM/ms_n-layered-ddd_template)
+1. Repository Code from [Users Comics Store](https://github.com/jorgeMorfinezM/ms-comics-store-users)
 2. Clone the repo
    ```sh
-   git clone https://github.com/jorgeMorfinezM/ms_n-layered-ddd_template.git
+   git clone https://github.com/jorgeMorfinezM/ms-comics-store-users.git
    ```
 3. Install project dependencies
    ```sh

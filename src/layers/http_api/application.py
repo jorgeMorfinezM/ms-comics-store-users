@@ -2,18 +2,15 @@ from __future__ import annotations
 
 from flask import Flask
 from flask_cors import CORS
+from config import HTTP_METHODS_ALLOW
+from config import ORIGINS
 
-from src.layers.http_api.endpoints.v1.view import endpoint_blueprint
+from src.layers.http_api.endpoints.v1.user_view import endpoint_blueprint
 
 app = Flask(__name__, instance_relative_config=True)
 
-POST = 'POST'
-GET = 'GET'
-PATCH = 'PATCH'
-DELETE = 'DELETE'
-
-http_methods_allow = [POST, GET, PATCH, DELETE]
-origins = ['localhost']
+http_methods_allow = HTTP_METHODS_ALLOW
+origins = ORIGINS
 
 CORS(
     app, resources={r'/v1/*'},

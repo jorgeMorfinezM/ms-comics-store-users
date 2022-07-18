@@ -1,0 +1,26 @@
+FLASK_SECRET_KEY=f35wQ+q+B_uH*s%M.PR-mKD$t
+FLASK_APP=src/layers/http_api/application
+FLASK_ENV=development
+FLASK_RUN_PORT=9000
+ENVIRONMENT="local"
+CONTENT_TYPE = 'application/json'
+HEADERS = {'Content-Type': CONTENT_TYPE}
+
+FERNET_SECRET_KEY=z-OpNajjgYApWQalFCZcQmq_o4x-ECbSMnW7ATWlde0_
+
+CORS_METHOD_GET='GET'
+CORS_METHOD_POST='POST'
+CORS_METHOD_PATCH='PATCH'
+CORS_METHOD_DELETE='DELETE'
+
+HTTP_METHODS_ALLOW=[CORS_METHOD_GET, CORS_METHOD_POST, CORS_METHOD_PATCH, CORS_METHOD_DELETE]
+
+ORIGINS=['localhost']
+
+# Database Envs
+DB_NAME=comics_users
+DB_ROOT_USERNAME=jmm_test_nosql
+DB_ROOT_PASSWORD=lwKopxPOGpQMFLBg
+MONGODB_HOST=cluster0.jny4lqv.mongodb.net
+MONGODB_PORT=27017
+MONGO_CLUSTER_CONN=mongodb+srv://jmm_test_nosql:lwKopxPOGpQMFLBg@cluster0.jny4lqv.mongodb.net/?retryWrites=true&w=majority

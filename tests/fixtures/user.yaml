@@ -1,0 +1,31 @@
+-
+  _id: 626cd16dc8fd4dcbe7a14c5d
+  uuid: 221781d0-ad9a-4827-b6a4-929f61c07449
+  first_name: jorge
+  last_name: blanquicett
+  phone: 5580158040
+  _email: j.blanquicett@hotmail.com
+  password: gAAAAABibNFtwUEnui_CMQPnMnikfh6vd9osQlTRX97CUIaTAnckZSOag2WqCA_38oSHfMSlJ2OAFw-qkktejh5BdlhIFNj2lg==
+  age: 25
+  token: XXXxxxxXXXXXxxxxXXXXxxxxXXXxxxxXXXXxxxY
+  created: 2022-04-30T01:04:29.243Z
+  modified: 2022-04-30T01:04:29.243Z
+  username: jblanquicett221781d0
+  phone_country_code: 52
+  is_active: true
+
+-
+  _id: 626cd16dc8fd4dcbe7a14cbb
+  uuid: 221781d0-ad9a-4827-b6a4-929f61c07453
+  first_name: jorge
+  last_name: morfinez
+  phone: 2292706733
+  _email: jorge.morfinez.m@ugmail.com
+  password: gAAAAABibNFtwUEnui_CMQPnMnikfh6vd9osQlTRX97CUIaTAnckZSOag2WqCA_38oSHfMSlJ2OAFw-qkktejh5BdlhIFNj2lg==
+  age: 34
+  token: YYYYYYxxxxxYYYYYXXXXXxxxxxYxXXXXXXyyyyX
+  created: 2022-04-30T01:04:39.243Z
+  modified: 2022-04-30T01:04:39.243Z
+  username: holocratic221781d0
+  phone_country_code: 52
+  is_active: true

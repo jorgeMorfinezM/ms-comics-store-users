@@ -111,7 +111,7 @@ env.bak/
 venv.bak/
 template-env/
 *env/
-bankaya_challenge/
+comics-users/
 
 # Spyder project settings
 .spyderproject

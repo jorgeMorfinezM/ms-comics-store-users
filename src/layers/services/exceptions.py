@@ -12,5 +12,5 @@ class InvalidDictionaryFormat(BaseCustomException):
     """Raised when dictionary object expected have malformed dictionary object format"""
 
 
-class IndexOutOfRange(BaseCustomException):
-    """Raised when number param requested not is an Integer data type"""
+class AttributeUUIDNotExists(BaseCustomException):
+    """Raised when Universal Unique ID does not exists on domain attribute"""
