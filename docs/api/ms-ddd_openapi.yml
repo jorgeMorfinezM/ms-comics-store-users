@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: ms_n-layered-ddd_template
+  version: 1.0.0
+servers:
+  - url: http://localhost
+components:
+  securitySchemes:
+    noauthAuth:
+      type: http
+      scheme: noauth
+tags:
+  - name: CatFacts
+paths:
+  /v1/endpoint-sample/:
+    get:
+      tags:
+        - Endpoint
+      summary: Retrieve Model
+      security:
+        - noauthAuth: []
+      parameters:
+        - facts: model
+          in: query
+          schema:
+            type: integer
+          example: '4'
+      responses:
+        '200':
+          description: OK
+          headers:
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Content-Length:
+              schema:
+                type: integer
+                example: '7899'
+          content:
+            application/json:
+              schema:
+                type: object
+        '400':
+          description: BAD REQUEST
+          headers:
+            Content-Type:
+              schema:
+                type: string
+                example: application/json
+            Content-Length:
+              schema:
+                type: integer
+          content:
+            application/json:
+              schema:
+                type: object
+        '405':
+          description: METHOD NOT ALLOWED
+          headers:
+            Content-Type:
+              schema:
+                type: string
+                example: text/html; charset=utf-8
+            Allow:
+              schema:
+                type: string
+                example: OPTIONS, POST
+            Content-Length:
+              schema:
+                type: integer
+                example: '178'
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: |-
+                <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+                <title>405 Method Not Allowed</title>
+                <h1>Method Not Allowed</h1>
+                <p>The method is not allowed for the requested URL.</p>

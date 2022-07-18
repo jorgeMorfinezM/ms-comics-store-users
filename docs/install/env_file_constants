@@ -1,0 +1,6 @@
+# ms Envs
+FLASK_SECRET_KEY=The flask secret key
+FLASK_APP=Directory to en-route the flask application and config
+FLASK_ENV=Flask API web framework working environment
+FLASK_RUN_PORT=Flask API port to run ms API
+ENVIRONMENT=The environment, can be: "local", "test", "producccion"
