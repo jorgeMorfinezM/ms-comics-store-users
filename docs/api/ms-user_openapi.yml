@@ -20,11 +20,16 @@ paths:
       security:
         - noauthAuth: []
       parameters:
-        - facts: model
-          in: query
+        - "username": "jorgemm13",
+        - "first_name": "Jorge",
+        - "last_name": "Mojica",
+        - "age": 34,
+        - "phone": 2292706733,
+        - "email": "jorge.morfinez.m@gmail.com",
+        - "password": "jorgemm13081054"
+          in: body
           schema:
             type: integer
-          example: '4'
       responses:
         '200':
           description: OK
@@ -35,8 +40,7 @@ paths:
                 example: application/json
             Content-Length:
               schema:
-                type: integer
-                example: '7899'
+                type: model
           content:
             application/json:
               schema:
@@ -87,11 +91,16 @@ paths:
       security:
         - noauthAuth: []
       parameters:
-        - facts: model
+        - username: str
           in: query
           schema:
-            type: integer
-          example: '4'
+            type: string
+          example: 'jorgemm'
+        - password: str
+            in: query
+            schema:
+              type: string
+            example: 'jorgemm1345634'
       responses:
         '200':
           description: OK
@@ -102,8 +111,7 @@ paths:
                 example: application/json
             Content-Length:
               schema:
-                type: integer
-                example: '7899'
+                type: model
           content:
             application/json:
               schema:
